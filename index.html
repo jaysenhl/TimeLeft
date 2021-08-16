@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>TimeLeft</title>
 </head>
 <body>
-    <p>hello</p>
+    <div class="container border border-info mt-5 rounded-3">
+
+        
+        <h2 class="text-center mt-5">Life in weeks,days,months untill your 100 years old.</h2>
+        <div class="text-center">
+            <i class="fas fa-user-clock fa-5x"></i>
+        </div>
+        <div class="container text-center mt-5">
+            <label class="form-label" for="">Enter age</label>
+            <input class="rounded" type="number" name="" id="numberinput">
+            <button id="calc" class="btn btn-success" onclick="calculate()">Caculate</button>
+            <button class="btn btn-danger" onclick="deleteAll()">delete</button>
+        </div>
+        <div class="container text-center mt-5">
+            <i class="far fa-calendar-alt"></i><p id="days">Days: </p>
+            <i class="far fa-calendar-alt"></i><p id="weeks">Weeks: </p>
+            <i class="far fa-calendar-alt"></i><p id="months">Months: </p>
+        </div>
+        
+    </div>
+        
+<footer class="footer text-center bg-dark text-success"> Made with <i class="fas fa-heart"></i> by Jaysen - 2021</footer>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
